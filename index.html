@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Quotes App</title>
+</head>
+
+<body>
+    <div class="quote-container position-relative flex-centered">
+        <div class="quote" id="quote">Your quote will appear here</div>
+        <span class="favorite-icon" id="favorite-icon" onclick="toggleFavorite()">
+            <i class="fa fa-heart" aria-hidden="true"></i>
+        </span>
+        <div class="quote-id" id="quote-id"></div>
+
+        <div class="button-container">
+            <button id="copy-quote" class="btn">Copy Quote</button>
+            <button id="reload-quote" class="btn">New Quote</button>
+            <button id="prev-quote" class="btn">Previous Quote</button>
+        </div>
+
+        <div id="message" class="message"></div>
+    </div>
+        <div class="favorites-container">
+            <button class="toggle-button" id="favorites-button" onclick="toggleFavorites()">Favorites</button>
+            <div class="favorite-quote" id="favorites-content" style="display: none;">
+                <p id="favorites-list"></p>
+            </div>
+        </div>
+        <div class="copied-container">
+            <button class="toggle-button" id="copied-button" onclick="toggleCopied()">Copied Quotes</button>
+            <div class="copied-quote" id="copied-content" style="display: none;">
+                <p id="copied-list"></p>
+            </div>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
